@@ -1,0 +1,59 @@
+#Capstone Project Ideas
+
+The following projects have been submitted as potential capstone project ideas for the Foundations of Data Science Springboard course.
+
+###Initial Ideas
+***
+####1. Personalized Medicine: 
++ __Project Description:__ With the wealth of healthcare data now available through industry changes such as electronic medical records and genetic sequencing, clinicians and researchers are hoping to harness this information to provide more specialized care to individual patients. The goal of this project is to utilize existing data on genetic mutations to identify drivers of cancer tumor growth. 
+
++ __Question:__ Cancer tumors can have thousands of genetic mutations. Which of these mutations contribute to tumor growth (drivers), and which are neutral mutations (passengers)?
+
++ __Client:__ Currently this interpretation of genetic mutations is being done manually. This is a very time-consuming task where a clinical pathologist has to manually review and classify every single genetic mutation based on evidence from text-based clinical literature. This classification algorithm would provide comparable information to pathologists and other clinicians in a fraction of the time.
+
++ __Data Set Link:__ https://www.kaggle.com/c/msk-redefining-cancer-treatment/data
+
+
+
+####2. Population Health: 
++ __Project Description:__ The Center for Disease Control and Prevention (CDC) has collected data on 27 measures of chronic disease for the largest 500 cities in the US. The goal of this project would be to create a method for identifying emerging health problems within cities or regions of the country.
+
++ __Question:__ Which cities are showing signs of active or emerging health problems? In answering this question, we would need to define what constitutes a health problem and create metrics to understand factors such as the severity and prevalence of the issue.
+
++ __Client:__ This information would be used by the CDC to inform the organization of high-risk cities or regions in need of additional funding or preventive care efforts.
+
++ __Data Set Link:__  https://catalog.data.gov/dataset/500-cities-local-data-for-better-health-b32fd
+
+
+
+####3. Post-Operative Care: 
++ __Project Description:__ The goal of this project is to utilize patient information to determine where patients should be taken post-surgery (ex. Intensive Care Unit, general hospital floor, home).
+
++ __Question:__ Given patient vitals and surgical information, where should patients in the post-operative recovery area be sent next?
+
++ __Client:__ Hospitals and ambulatory surgery centers would be able to use this information to more quickly triage patients in the post-operative area. In the future, they could also use this information as a predictive model to plan for numbers of patients expected within the ICU and general hospital units.
+
++ __Data Set Link:__ https://archive.ics.uci.edu/ml/datasets/Post-Operative+Patient
+
+
+###Additional Ideas
+***
+####4. Predicting Length of Stay: 
++ __Project Description:__ The goal of this project is to use patient-level admissions and discharges data to predict length of stay for future patients at similar treatment centers.
+
++ __Question:__ What is the expected length of stay for patients receiving care at substance abuse facilities, given admissions, discharges and demographics information for each patient?
+
++ __Client:__ The included substance abuse facilities can use this information to plan capacity and staffing needs, as well as to prepare patients and families by setting expectations for the time spent in the facility.
+
++ __Data Set Link:__ Admissions Data - https://www.datafiles.samhsa.gov/study-dataset/treatment-episode-data-set-admissions-2014-teds-2014-ds0001-nid16950 Discharges Data - https://www.datafiles.samhsa.gov/study-series/treatment-episode-data-set-discharges-teds-d-nid13520
+
+
+
+####5. Healthcare Costs and Utilization: 
++ __Project Description:__ This project uses both facility and patient-level data to understand costs and utilization for patients visiting both large and small facilities in Western Pennsylvania. The goal is to understand whether the difference in size affects the overall utilization and cost of each location.
+
++ __Question:__ Does the size of a health care provider affect that facility's utilization and cost?
+
++ __Client:__ In this case, the data focus on Blue Cross Blue Shield-associated centers in Western Pennsylvania. This analysis could be used by Blue Cross Blue Shield to understand differences in how health care is provided in small vs. large establishments, and to incentivize both facilities and insurance carriers to focus on providing or choosing (respectively) lower cost care.
+
++ __Data Set Link:__  http://www.icpsr.umich.edu/icpsrweb/HMCA/studies/6859?classification=HMCA.II.&archive=HMCA
