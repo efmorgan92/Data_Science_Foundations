@@ -1,0 +1,12 @@
+### Connecting Github, Git and RStudio
+http://happygitwithr.com/rstudio-git-github.html
+
+### R Practice
+Swirl tutorials: install.packages("swirl") -> library(swirl)
+
+### R Help
+http://rseek.org/
+http://www.statmethods.net/
+
+### R Style Guide
+http://adv-r.had.co.nz/Style.html
