@@ -1,12 +1,15 @@
-### Connecting Github, Git and RStudio
+##### Connecting Github, Git and RStudio
 http://happygitwithr.com/rstudio-git-github.html
 
-### R Practice
+##### R Practice
 Swirl tutorials: install.packages("swirl") -> library(swirl)
 
-### R Help
+##### R Help
 http://rseek.org/
 http://www.statmethods.net/
 
-### R Style Guide
+##### R Style Guide
 http://adv-r.had.co.nz/Style.html
+
+##### Cheatsheet: Data Wrangling in R
+https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf
