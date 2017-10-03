@@ -1,7 +1,7 @@
 # Call relevant packages and setwd()
 library(dplyr)
 library(tidyr)
-setwd("C:/Users/morgane/Documents/Data_Science_Foundations/Data Wrangling")
+setwd("./Data Wrangling")
 
 # Read companies (df) data into R
 df <- tbl_df(read.csv("refine_original.csv"))
