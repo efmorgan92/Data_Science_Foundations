@@ -1,0 +1,48 @@
+---
+title: "Capstone Data Wrangling Report"
+author: "Franklin Morgan"
+date: "December 28, 2017"
+output: html_document
+---
+
+The data used in this capstone project are proprietary and therefore cannot be shared; however, the steps used to wrangle the data into a format for modeling are described below.
+
+###Data Overview
+_____________________________
+The final dataset includes all T&A procedures performed within 2017 at the main hospital of the given organization. It includes surgeries in which only a single procedure was performed in order to better compare supply costs across surgeons. Procedure names with less than 100 total procedures performed were excluded. The two remaining procedures are: 
+
+* T&A 11 AND UNDER
+* T&A 12 AND OVER
+
+The scope of surgical supplies includes all disposable supplies (including implants), and excludes any reusable supplies such as instruments and medical devices.
+
+Data are summarized at the procedure level, and include descriptive variables about the patient and procedure as well as calculated variables such as total supply cost and number of supplies used.
+
+The final dataset contains 962 lines (procedures) and contains the following fields: 
+
+* OR Log ID (LOG_ID)
+* Surgeon Name (surgeon) - Names are anonymized
+* Procedure Name (procedure_nm)
+* Surgery Date (surgery_dt)
+* ASA Rating (asa_rating) - Patient acuity rating (determined by Anesthesia)
+* Cost of Procedure (total_proc_cost)
+* Number of Supplies Used (total_supplies_used)
+
+
+###Data Acquisition
+_____________________________
+Data were pulled from the organization data warehouse, which stores both patient electronic medical record information and supply chain information related to supply unit costs and distribution. The data are stored in tables in a relational database, and were pulled and linked using SQL. R was used to further clean and format the resulting table.
+
+###Data Wrangling
+_____________________________
+Please see below for high level steps: 
+
+1. Pull data from tables in the data warehouse using SQL (13 tables total). Each line represents one type of supply used in a procedure. 
+2. Filter data by specialty and relevant procedures in R using tidyr and dplyr packages. 
+3. Sum count of procedures performed by procedure name and filtered any procedure performed less than 100 times in the given timeframe.
+4. Sum count of procedures performed by surgeon to ensure each surgeon has a reasonable number of procedures. No additional filters applied at this point.
+5. Mutate current surgeon column to anonymize data (now listed as Surgeon A, Surgeon B, etc...)
+6. Summarize data into a final dataset at the procedure level by summing the total procedure cost and number of supplies used in each unique procedure. Removed any supplies with no unit cost or zero supplies used in the procedure. 
+
+
+
