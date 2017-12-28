@@ -1,0 +1,39 @@
+---
+title: "Capstone Project Proposal"
+author: "Franklin Morgan"
+date: "December 28, 2017"
+output: html_document
+---
+
+###What is the problem you want to solve?
+
+Healthcare costs continue to rise within the United States, with operating room (OR) costs often accounting for more than 40% of hospitalization costs for surgical patients. While surgeons do not have direct control over many costs associated with surgery, they do have a preference in the supplies used during each procedure. 
+
+The goal of this project is to quantify the variation in OR costs due to surgeon preference. By understanding this variation, we can identify opportunities for standardization of surgical supply use in order to lower surgical costs while maintaining high patient outcomes. 
+
+Analysis will focus on common Otolarygology (Tonsillectomy and Adenoidectomy (T&A)) procedures performed at a single children's hospital location. 
+
+###Who is your client and why do they care about this problem?
+
+The intended audience for this analysis is a team of hospital staff at the children's hospital, including representatives from Otolarygology, OR administration and Supply Chain. Reducing the variation in surgical supply costs could reduce overall hospital costs, place less burden on the patient, and reduce the number of unique products stored in Supply Chain.
+
+The goals for this analysis would be to first confirm whether uneccessary variation exists within surgical costs based on surgeon preference, and to then share the information with hospital staff. Assuming variation is present, the team can use this information to identify and learn from high performers (surgeons with low surgical costs), as well as understand and address areas of opportunity.
+
+###What data are you going to use for this? How will you acquire this data?
+
+Data will be collected from the hospital data warehouse, which stores information from patient electronic medical records. Specifically, data will be collected on T&A procedures performed in 2017, including the associated surgeon and surgical supply costs. Patient and surgeon data will be anonymzied to comply with HIPAA and hospital standards. Access to this data is available based on my employment with the organization.
+
+
+###Outline your approach to solving this problem.
+
+Data will be pulled from the data warehouse using SQL, and prepared using R for modeling. This final format will be summarized at the procudure level, with descriptive variables such as procedure name and ASA rating, and calculated variables such as total supply cost. 
+
+The data will then be modeled using linear regression to create an equation for predicting supply costs of future patients given a set of initial criteria. 
+
+Finally, an "average" patient will be defined based on the data. This model will be applied to the average patient multiple times with all variables held constant except for the assigned surgeon, and will predict the supply cost for that patient and procedure. Finally, comparing the resulting predictions will reveal any differences in expected surgical supply costs based on surgeon.
+
+###What are your deliverables? 
+
+Final deliverables will include all code written during this exploration, as well as a project paper outlining the approach, results and recommendations of any areas of high opportunity to address variation. A presentation will also be created to highlight the project and any recommendations.
+
+
